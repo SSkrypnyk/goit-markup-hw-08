@@ -1,0 +1,80 @@
+.mailing {
+    @include mq(desktop) {
+        display: flex;
+        position: relative;
+        margin-left: 93px;
+        }
+    @include mq(tablet-only) {
+        padding-left: 166px;
+    }
+    
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+
+        @include mq(not-desktop) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    @include mq(desktop) {
+        &__wrap {
+                display: flex;
+                margin-top: 20px;
+            }
+    }
+        
+    &__field {
+        @include mq(not-desktop) {
+            width: 450px;
+        }
+        @include mq(not-desktop) {
+            margin-bottom: 20px;
+        }
+
+        display: block;
+        width: 358px;
+        background-color: transparent;
+        padding: 15px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: var(--white-text-color);
+    }
+    &__icon {
+        position: absolute;
+        top: 13px;
+        right: 28px;
+    }
+        
+    &__icon--send {
+        fill: #FFFFFF;
+    }
+}
+.mailing-btn {
+    position: relative;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    padding: 10px 29px 10px 0px;
+    width: 200px;
+    @include mq (desktop) {
+        margin-left: 12px;
+    }
+
+    letter-spacing: 0.06em;
+
+    color: var(--white-text-color);
+    background-color: var(--bg-btn-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}

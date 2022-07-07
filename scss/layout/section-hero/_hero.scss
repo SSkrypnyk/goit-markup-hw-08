@@ -1,0 +1,76 @@
+.section-hero {
+    @include mq(mobile-only) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-mobile.jpg);
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-mobile@2x.jpg);
+        }
+    }
+
+    @include mq(tablet-only) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-tablet.jpg);
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-tablet@2x.jpg);
+        }
+    }
+    @include mq(mobile) {
+        background-color: var(--bg-footer-color);
+        text-align: center;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: auto;
+        margin-left: auto;
+    }
+     
+    @include mq(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-desktop.jpg);
+        max-width: 1600px;
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-desktop@2x.jpg);
+        }
+    }
+
+    &__tittle {
+        @include mq(mobile) {
+            font-size: 26px;
+            line-height: 1.62;
+            }
+        
+        @include mq(desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+            }
+        
+        font-weight: 900;
+        
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-text-color);
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        }
+    }
+
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--bg-btn-color);
+    color: var(--white-text-color);
+    padding: 10px 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}

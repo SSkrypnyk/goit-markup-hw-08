@@ -1,0 +1,48 @@
+.address-list {
+    display: flex;
+    margin-left: auto;
+
+    @include mq(tablet-only) {
+        flex-direction: column;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    &__item--second {
+        @include mq(tablet-only) {
+            margin-top: 10px;
+        }
+        @include mq(desktop) {
+            margin-left: 50px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        
+        @include mq(desktop) {
+            padding-bottom: 32px;
+            padding-top: 32px;
+        }
+    
+        color: var(--secondary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+    &__icon {
+        margin-right: 10px;
+        fill: var(--secondary-text-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__item:hover &__icon,
+    &__item:focus &__icon {
+        fill: var(--accent-color);
+    }
+}

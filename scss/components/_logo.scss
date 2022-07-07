@@ -1,0 +1,30 @@
+.logo {
+    @include mq(tablet) {
+        margin-right: 88px;
+    }
+    @include mq(desktop) {
+        margin-right: 93px;
+    }
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-text-color);
+}
+
+.header-logo {
+    margin-bottom: 0;
+}
+
+.logo__accent {
+    color: var(--accent-color);
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    color: var(--white-text-color);
+}
