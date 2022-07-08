@@ -59,9 +59,9 @@
             <div class="container mobile-container" data-menu>
                 <ul class=" mobile-container__nav-list">
                     <li class="mobile-container__nav-item"><a href="./index.html"
-                            class="mobile-nav__link mobile-nav__link--current">Студия</li>
-                    <li class="mobile-container__nav-item"><a href="./portfolio.html" class="mobile-nav__link">Портфолио</li>
-                    <li class="mobile-container__nav-item"><a href="#" class="mobile-nav__link">Контакты</li>
+                            class="mobile-nav__link mobile-nav__link--current">Студия</a></li>
+                    <li class="mobile-container__nav-item"><a href="./portfolio.html" class="mobile-nav__link">Портфолио</a></li>
+                    <li class="mobile-container__nav-item"><a href="#" class="mobile-nav__link">Контакты</a></li>
                 </ul>
                 <ul class="mobile-container__address-list">
                     <li class="mobile-container__address-item mobile-container__address-item--tel"><a
@@ -105,7 +105,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/laptop.jpg" alt="Ноутбук" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/laptop_370.jpg 1x, ./portfolio.jpg/laptop@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/laptop_354.jpg 1x, ./portfolio.jpg/laptop@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/laptop_450.jpg 1x, ./portfolio.jpg/laptop@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/laptop_354.jpg 354w, ./portfolio.jpg/laptop@2x_708.jpg 708w, ./portfolio.jpg/laptop_370.jpg 370w, ./portfolio.jpg/laptop@2x_740.jpg 740w, ./portfolio.jpg/laptop_450.jpg 450w, ./portfolio.jpg/laptop@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/laptop_370.jpg" alt="Ноутбук" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -122,7 +133,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/basketball.jpg" alt="Два баскетболиста и мяч" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./portfolio.jpg/basketball_370.jpg 1x, ./portfolio.jpg/basketball@2x_740.jpg 2x" type="images/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./portfolio.jpg/basketball_354.jpg 1x, ./portfolio.jpg/basketball@2x_708.jpg 2x" type="images/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./portfolio.jpg/basketball_450.jpg 1x, ./portfolio.jpg/basketball@2x_900.jpg 2x" type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/basketball_354.jpg 354w, ./portfolio.jpg/basketball@2x_708.jpg 708w, ./portfolio.jpg/basketball_370.jpg 370w, ./portfolio.jpg/basketball@2x_740.jpg 740w, ./portfolio.jpg/basketball_450.jpg 450w, ./portfolio.jpg/basketball@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/basketball_370.jpg" alt="Два баскетболиста и мяч" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -139,7 +161,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/seafood.jpg" alt="Логотип рыбного ресторана" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./portfolio.jpg/seafood_370.jpg 1x, ./portfolio.jpg/seafood@2x_740.jpg 2x" type="images/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./portfolio.jpg/seafood_354.jpg 1x, ./portfolio.jpg/seafood@2x_708.jpg 2x" type="images/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./portfolio.jpg/seafood_450.jpg 1x, ./portfolio.jpg/seafood@2x_900.jpg 2x" type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/seafood_354.jpg 354w, ./portfolio.jpg/seafood@2x_708.jpg 708w, ./portfolio.jpg/seafood_370.jpg 370w, ./portfolio.jpg/seafood@2x_740.jpg 740w, ./portfolio.jpg/seafood_450.jpg 450w, ./portfolio.jpg/seafood@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/seafood_370.jpg" alt="Логотип рыбного ресторана" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -156,7 +189,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/headphones.jpg" alt="Наушники" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/headphones_370.jpg 1x, ./portfolio.jpg/headphones@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/headphones_354.jpg 1x, ./portfolio.jpg/headphones@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/headphones_450.jpg 1x, ./portfolio.jpg/headphones@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/headphones_354.jpg 354w, ./portfolio.jpg/headphones@2x_708.jpg 708w, ./portfolio.jpg/headphones_370.jpg 370w, ./portfolio.jpg/headphones@2x_740.jpg 740w, ./portfolio.jpg/headphones_450.jpg 450w, ./portfolio.jpg/headphones@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/headphones_370.jpg" alt="Наушники" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -173,7 +217,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/boxes.jpg" alt="Две коробки" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./portfolio.jpg/boxes_370.jpg 1x, ./portfolio.jpg/boxes@2x_740.jpg 2x" type="images/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./portfolio.jpg/boxes_354.jpg 1x, ./portfolio.jpg/boxes@2x_708.jpg 2x" type="images/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./portfolio.jpg/boxes_450.jpg 1x, ./portfolio.jpg/boxes@2x_900.jpg 2x" type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/boxes_354.jpg 354w, ./portfolio.jpg/boxes@2x_708.jpg 708w, ./portfolio.jpg/boxes_370.jpg 370w, ./portfolio.jpg/boxes@2x_740.jpg 740w, ./portfolio.jpg/boxes_450.jpg 450w, ./portfolio.jpg/boxes@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/boxes_370.jpg" alt="Две коробки" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -190,7 +245,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/monitor.jpg" alt="Монитор" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/monitor_370.jpg 1x, ./portfolio.jpg/monitor@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/monitor_354.jpg 1x, ./portfolio.jpg/monitor@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/monitor_450.jpg 1x, ./portfolio.jpg/monitor@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/monitor_354.jpg 354w, ./portfolio.jpg/monitor@2x_708.jpg 708w, ./portfolio.jpg/monitor_370.jpg 370w, ./portfolio.jpg/monitor@2x_740.jpg 740w, ./portfolio.jpg/monitor_450.jpg 450w, ./portfolio.jpg/monitor@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/monitor_370.jpg" alt="Монитор" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -207,7 +273,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/magazine.jpg" alt="Журнал" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/magazine_370.jpg 1x, ./portfolio.jpg/magazine@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/magazine_354.jpg 1x, ./portfolio.jpg/magazine@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/magazine_450.jpg 1x, ./portfolio.jpg/magazine@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/magazine_354.jpg 354w, ./portfolio.jpg/magazine@2x_708.jpg 708w, ./portfolio.jpg/magazine_370.jpg 370w, ./portfolio.jpg/magazine@2x_740.jpg 740w, ./portfolio.jpg/magazine_450.jpg 450w, ./portfolio.jpg/magazine@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/magazine_370.jpg" alt="Журнал" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -224,7 +301,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/tag.jpg" alt="Бирка" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/tag_370.jpg 1x, ./portfolio.jpg/tag@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/tag_354.jpg 1x, ./portfolio.jpg/tag@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/tag_450.jpg 1x, ./portfolio.jpg/tag@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg/tag_354.jpg 354w, ./portfolio.jpg/tag@2x_708.jpg 708w, ./portfolio.jpg/tag_370.jpg 370w, ./portfolio.jpg/tag@2x_740.jpg 740w, ./portfolio.jpg/tag_450.jpg 450w, ./portfolio.jpg/tag@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/tag_370.jpg" alt="Бирка" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -241,7 +329,18 @@
                     <li class="portfolio-card__item">
                         <a href="#" class="portfolio-card__link">
                             <div class="portfolio-card__wrap">
-                                <img class="project" src="./portfolio.jpg/job.jpg" alt="Работа за ноутбуком" width="370" height="294">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./portfolio.jpg/job_370.jpg 1x, ./portfolio.jpg/job@2x_740.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(min-width: 768px)" srcset="./portfolio.jpg/job_354.jpg 1x, ./portfolio.jpg/job@2x_708.jpg 2x"
+                                        type="images/jpg">
+                                    <source media="(max-width: 767px)" srcset="./portfolio.jpg/job_450.jpg 1x, ./portfolio.jpg/job@2x_900.jpg 2x"
+                                        type="images/jpg">
+                                    <img class="project"
+                                        srcset="./portfolio.jpg//job_354.jpg 354w, ./portfolio.jpg//job@2x_708.jpg 708w, ./portfolio.jpg//job_370.jpg 370w, ./portfolio.jpg//job@2x_740.jpg 740w, ./portfolio.jpg//job_450.jpg 450w, ./portfolio.jpg//job@2x_900.jpg 900w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                                        src="./portfolio.jpg/job_370.jpg" alt="Работа за ноутбуком" width="450" height="294" loading="lazy">
+                                </picture>
                                 <p class="portfolio-card__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить

@@ -30,7 +30,10 @@
     }
         
     &__field {
-        @include mq(not-desktop) {
+        @include mq(mobile-only) {
+            width: 100%;
+        }
+        @include mq(tablet-only) {
             width: 450px;
         }
         @include mq(not-desktop) {
