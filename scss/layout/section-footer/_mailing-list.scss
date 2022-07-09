@@ -7,6 +7,12 @@
     @include mq(tablet-only) {
         padding-left: 166px;
     }
+    &__form {
+        @include mq (tablet-only) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     
     &__text {
         font-weight: 700;

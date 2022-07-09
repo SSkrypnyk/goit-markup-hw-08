@@ -1030,7 +1030,7 @@ textarea {
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--white-text-color);
+  background-color: #F5F4FA;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1234,7 +1234,7 @@ textarea {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer__nav {
     text-align: center;
   }
@@ -1328,6 +1328,12 @@ textarea {
   color: var(--white-text-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .advertising__tittle {
+    text-align: center;
+  }
+}
+
 .advertising__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1359,6 +1365,18 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .mailing {
     padding-left: 166px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .mailing__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

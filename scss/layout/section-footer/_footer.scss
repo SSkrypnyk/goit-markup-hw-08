@@ -4,7 +4,7 @@
     padding-bottom: 60px;
 
     &__nav {
-        @include mq(mobile-only){
+        @include mq(not-desktop) {
         text-align: center;
         }
         @include mq(tablet-only) {
