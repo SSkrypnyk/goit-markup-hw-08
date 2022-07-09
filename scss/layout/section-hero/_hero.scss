@@ -1,15 +1,15 @@
 .section-hero {
     @include mq(mobile-only) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-mobile.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgi.jpg/Header-mobile.jpg);
         @include mq(retina) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-mobile@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgi.jpg/Header-mobile@2x.jpg);
         }
     }
 
     @include mq(tablet-only) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-tablet.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgi.jpg/Header-tablet.jpg);
         @include mq(retina) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-tablet@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgi.jpg/Header-tablet@2x.jpg);
         }
     }
     @include mq(not-desktop) {
@@ -27,10 +27,10 @@
     @include mq(desktop) {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-desktop.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgi.jpg/Header-desktop.jpg);
         max-width: 1600px;
         @include mq(retina) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/header-desktop@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgi.jpg/Header-desktop@2x.jpg);
         }
     }
 
